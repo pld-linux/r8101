@@ -39,13 +39,13 @@ BuildRequires:	rpmbuild(macros) >= 1.452
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This package contains the Linux driver for the 
-RTL8100E/RTL8101E/RTL8102E-GR/RTL8103E(L)/RTL8102E(L)/RTL8101E/RTL8103T
-Network Interface Cards.
+This package contains the Linux driver for the RTL8100E/RTL8101E/
+RTL8102E-GR/RTL8103E(L)/RTL8102E(L)/RTL8101E/RTL8103T Network Interface
+Cards.
 
 %description -l pl.UTF-8
-Pakiet zawiera sterownik dla Linuksa do kart sieciowych
-RTL8100E/RTL8101E/RTL8102E-GR/RTL8103E(L)/RTL8102E(L)/RTL8101E/RTL8103T
+Pakiet zawiera sterownik dla Linuksa do kart sieciowych RTL8100E/
+RTL8101E/RTL8102E-GR/RTL8103E(L)/RTL8102E(L)/RTL8101E/RTL8103T.
 
 %package -n kernel%{_alt_kernel}-net-%{pname}
 Summary:	Linux driver for the RTL8100E/RTL8101E/RTL8102E-GR/RTL8103E(L)/RTL8102E(L)/RTL8101E/RTL8103T Network Interface Cards
@@ -56,13 +56,13 @@ Requires(post,postun):	/sbin/depmod
 %{?with_dist_kernel:Requires:	kernel%{_alt_kernel}(vermagic) = %{_kernel_ver}}
 
 %description -n kernel%{_alt_kernel}-net-%{pname}
-Linux driver for the Broadcom's NetXtreme
-RTL8100E/RTL8101E/RTL8102E-GR/RTL8103E(L)/RTL8102E(L)/RTL8101E/RTL8103T
-Network Interface Cards.
+Linux driver for the Broadcom's NetXtreme RTL8100E/RTL8101E/
+RTL8102E-GR/RTL8103E(L)/RTL8102E(L)/RTL8101E/RTL8103T Network Interface
+Cards.
 
 %description -n kernel%{_alt_kernel}-net-%{pname} -l pl.UTF-8
-Sterownik dla Linuksa do kart sieciowych
-RTL8100E/RTL8101E/RTL8102E-GR/RTL8103E(L)/RTL8102E(L)/RTL8101E/RTL8103T
+Sterownik dla Linuksa do kart sieciowych RTL8100E/RTL8101E/RTL8102E-GR/
+RTL8103E(L)/RTL8102E(L)/RTL8101E/RTL8103T.
 
 %package -n kernel%{_alt_kernel}-smp-net-%{pname}
 Summary:	Linux SMP driver for the RTL8100E/RTL8101E/RTL8102E-GR/RTL8103E(L)/RTL8102E(L)/RTL8101E/RTL8103T Network Interface Cards
@@ -73,13 +73,12 @@ Requires(post,postun):	/sbin/depmod
 %{?with_dist_kernel:Requires:	kernel%{_alt_kernel}-smp(vermagic) = %{_kernel_ver}}
 
 %description -n kernel%{_alt_kernel}-smp-net-%{pname}
-Linux SMP driver for the 
-RTL8100E/RTL8101E/RTL8102E-GR/RTL8103E(L)/RTL8102E(L)/RTL8101E/RTL8103T
-Network Interface Cards.
+Linux SMP driver for the RTL8100E/RTL8101E/RTL8102E-GR/RTL8103E(L)/
+RTL8102E(L)/RTL8101E/RTL8103T Network Interface Cards.
 
 %description -n kernel%{_alt_kernel}-smp-net-%{pname} -l pl.UTF-8
-Sterownik dla Linuksa SMP do kart sieciowych
-RTL8100E/RTL8101E/RTL8102E-GR/RTL8103E(L)/RTL8102E(L)/RTL8101E/RTL8103T
+Sterownik dla Linuksa SMP do kart sieciowych RTL8100E/RTL8101E/
+RTL8102E-GR/RTL8103E(L)/RTL8102E(L)/RTL8101E/RTL8103T.
 
 %prep
 %setup -q -n %{pname}-%{version}
