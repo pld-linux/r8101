@@ -56,9 +56,8 @@ Requires(post,postun):	/sbin/depmod
 %{?with_dist_kernel:Requires:	kernel%{_alt_kernel}(vermagic) = %{_kernel_ver}}
 
 %description -n kernel%{_alt_kernel}-net-%{pname}
-Linux driver for the Broadcom's NetXtreme RTL8100E/RTL8101E/
-RTL8102E-GR/RTL8103E(L)/RTL8102E(L)/RTL8101E/RTL8103T Network Interface
-Cards.
+Linux driver for the  RTL8100E/RTL8101E/RTL8102E-GR/RTL8103E(L)/
+RTL8102E(L)/RTL8101E/RTL8103T Network Interface Cards.
 
 %description -n kernel%{_alt_kernel}-net-%{pname} -l pl.UTF-8
 Sterownik dla Linuksa do kart sieciowych RTL8100E/RTL8101E/RTL8102E-GR/
