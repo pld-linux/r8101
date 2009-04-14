@@ -90,7 +90,7 @@ RTL8102E-GR/RTL8103E(L)/RTL8102E(L)/RTL8101E/RTL8103T.
 rm -rf $RPM_BUILD_ROOT
 
 %if %{with kernel}
-%install_kernel_modules -m src/%{pname} -d kernel/drivers/net -n %{pname} -s ""
+%install_kernel_modules -m src/%{pname} -d kernel/drivers/net -n %{pname} -s current
 %endif
 
 %clean
