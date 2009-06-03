@@ -27,11 +27,11 @@
 Summary:	Linux driver for the RTL8100E/RTL8101E/RTL8102E-GR/RTL8103E(L)/RTL8102E(L)/RTL8101E/RTL8103T Network Interface Cards
 Summary(pl.UTF-8):	Sterownik dla Linuksa do kart sieciowych RTL8100E/RTL8101E/RTL8102E-GR/RTL8103E(L)/RTL8102E(L)/RTL8101E/RTL8103T
 Name:		%{pname}%{_alt_kernel}
-Version:	1.011.00
+Version:	1.012.00
 Release:	%{rel}
 License:	GPL v2
 Group:		Base/Kernel
-Source0:	%{pname}-%{version}.tar.bz2
+Source0:	ftp://WebUser:DAx7h9V@61.56.86.122/cn/nic/%{pname}-%{version}.tar.bz2
 Patch0:		%{pname}-2.6.16.patch
 URL:		http://www.realtek.com.tw/downloads/downloadsView.aspx?Langid=1&PNid=14&PFid=7&Level=5&Conn=4&DownTypeID=3&GetDown=false
 %{?with_dist_kernel:BuildRequires:	kernel%{_alt_kernel}-module-build >= 3:2.6.14}
