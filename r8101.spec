@@ -81,7 +81,7 @@ RTL8102E-GR/RTL8103E(L)/RTL8102E(L)/RTL8101E/RTL8103T.
 
 %prep
 %setup -q -n %{pname}-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %build_kernel_modules -m %{pname} -C src
